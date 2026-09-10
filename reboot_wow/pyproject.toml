@@ -1,0 +1,22 @@
+[project]
+name = "reboot-wow"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Yaqeen Alhalal",email = "YaqeenAlhalal@outlook.sa"}
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi (>=0.141.1,<0.142.0)",
+    "uvicorn (>=0.52.4,<0.53.0)",
+    "requests (>=2.34.2,<3.0.0)",
+    "pandas (>=3.0.5,<4.0.0)"
+]
+
+[tool.poetry]
+packages = [{include = "reboot_wow", from = "src"}]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
